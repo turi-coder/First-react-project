@@ -6,19 +6,43 @@ import './App.css'
 import CountWithOutState from "./CountWithOutState"
 import CountWithState from "./CountWithState"
 import MultiState from "./MultiState"
+import StateWithObject from "./StateWithObject"
+import { useState } from "react"
+import Navbar from "./Navbar"
 
 function App() {
 
+  const [name, setName] = useState("amit")
+
+
+
   return (
-   <div>
-    {/* <Home/>
+    <div>
+      {/* *******************Component & jsx******************** */}
+
+      {/* <Home/>
    <C/>
     <About/>
     <Block/> */}
-    {/* <CountWithOutState/> */}
-    {/* <CountWithState /> */}
-    <MultiState/>
-   </div>
+      {/* *******************Component & jsx******************** */}
+
+      {/* *******************state******************** */}
+
+      {/* <CountWithOutState/> */}
+      {/* <CountWithState /> */}
+      {/* <MultiState/> */}
+      {/* <StateWithObject/> */}
+
+      {/* *******************state******************** */}
+
+
+      {/* *******************props******************** */}
+
+
+      <Navbar name={name} roll={1} sec={"a"}/>
+      {/* *******************props******************** */}
+
+    </div>
   )
 }
 
