@@ -9,6 +9,7 @@ import MultiState from "./MultiState"
 import StateWithObject from "./StateWithObject"
 import { useState } from "react"
 import Navbar from "./Navbar"
+import Event from "./Event"
 
 function App() {
 
@@ -39,9 +40,11 @@ function App() {
       {/* *******************props******************** */}
 
 
-      <Navbar name={name} roll={1} sec={"a"}/>
+      {/* <Navbar name={name} roll={1} sec={"a"}/> */}
       {/* *******************props******************** */}
 
+      {/* *******************Events******************** */}
+      <Event />
     </div>
   )
 }
