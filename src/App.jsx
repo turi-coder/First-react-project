@@ -10,6 +10,12 @@ import StateWithObject from "./StateWithObject"
 import { useState } from "react"
 import Navbar from "./Navbar"
 import Event from "./Event"
+import Onchange from "./Onchange"
+import FormHandeling from "./FormHandeling"
+import IfElse from "./IfElse"
+import Loading from "./Loading"
+import StateConditional from "./StateConditional"
+
 
 function App() {
 
@@ -44,7 +50,15 @@ function App() {
       {/* *******************props******************** */}
 
       {/* *******************Events******************** */}
-      <Event />
+      {/* <Event /> */}
+      {/* <Onchange /> */}
+      {/* <FormHandeling /> */}
+
+      {/* *******************Conditional rendering******************** */}
+      {/* <IfElse login={"fg"}/> */}
+      {/* <Loading /> */}
+      <StateConditional/>
+
     </div>
   )
 }
